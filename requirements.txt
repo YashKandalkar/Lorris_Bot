@@ -1,0 +1,8 @@
+discord.py 
+google
+youtube_dl 
+bs4
+PyLyrics 
+imagesoup
+hastebin.py 
+google
