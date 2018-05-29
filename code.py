@@ -34,12 +34,9 @@ welcome_messages = {}
     
     
 def is_owner(ctx):
-       
- if ctx.message.author.id == "388984732156690433":
-           
-     return True
-      
- return False
+     if ctx.message.author.id == "388984732156690433":
+           return True
+     return False
     
     
 jokes = 'https://icanhazdadjoke.com/'
