@@ -138,7 +138,7 @@ class Fun:
           
     text = text.replace('|','\n')
     kys = Image.open("images/kys.jpg")
-    font = ImageFont.truetype("fonts/HussarBd.otf", 30)
+    font = ImageFont.truetype("fonts/fonts/HussarBd.otf", 30)
     draw = ImageDraw.Draw(kys)
     draw.text((30,25),text,(255,255,255),font=font)
     draw = ImageDraw.Draw(kys)
@@ -151,7 +151,7 @@ class Fun:
   @commands.command() 
   async def troll(self, mem: discord.Member):
     '''Troll someone'''
-    im = Image.open("images/stepped_on_shit.jpg")
+    im = Image.open("images/images/stepped_on_shit.jpg")
     async with aiohttp.ClientSession() as cs: 
       async with cs.get(mem.avatar_url) as ava: 
         with open("image.jpg",'wb') as avatar: 
@@ -169,7 +169,7 @@ class Fun:
   @commands.command() 
   async def graphp(self, f):
     '''Plot (x,y) in a graph. WIP'''
-    im = Image.open("images/test-2.jpg")
+    im = Image.open("images/images/test-2.jpg")
     d=ImageDraw.Draw(im)
     
     func = lambda x: eval(f)
@@ -192,7 +192,7 @@ class Fun:
   @commands.command() 
   async def graph(self, f):
     '''Plot the points in a graph and join them; hence making a line. WIP'''
-    im = Image.open("images/test-2.jpg")
+    im = Image.open("images/images/test-2.jpg")
     d=ImageDraw.Draw(im)
     
     func = lambda x: eval(f)
@@ -511,8 +511,8 @@ class TicTacToe:
       '''Start a new TicTacToe game.'''
         
       global font
-      background = Image.open("images/tictactoe.jpg")
-      font = ImageFont.truetype("fonts/comicsans.ttf", 130)
+      background = Image.open("images/images/tictactoe.jpg")
+      font = ImageFont.truetype("fonts/fonts/comicsans.ttf", 130)
    
    
       if not ctx.message.channel.id in channels_with_gameON:
