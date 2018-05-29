@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
-
+print("Strarting")
 import discord
 from discord.ext import commands
 import asyncio
@@ -133,7 +133,7 @@ class Fun:
     """The kill yourself meme""" 
           
     text = text.replace('|','\n')
-    kys = Image.open("images/kys.jpg")
+    kys = Image.open("images/images/kys.jpg")
     font = ImageFont.truetype("fonts/fonts/HussarBd.otf", 30)
     draw = ImageDraw.Draw(kys)
     draw.text((30,25),text,(255,255,255),font=font)
